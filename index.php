@@ -112,13 +112,11 @@ $agendamento = $ag->findAll();
                         <i class="fas fa-trash"></i>
                     </button>
                 </td>
-
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
         </div>
-
         <div class="col-md-6">
             <h2 class="text-center" style="font-family: Arial, Helvetica, sans-serif; color: #80bdff; text-align: center; font-size: 30px">Pacientes</h2>
             <table class="table table-hover table-striped table-md">
@@ -133,7 +131,6 @@ $agendamento = $ag->findAll();
                 <tbody>
                 <?php  foreach ($paciente as $item) { ?>
                 <tr>
-
                     <td class="text-center"> </td>
                     <td class="text-center"><?= $item['nomePa']?></td>
                     <td class="text-center"><?= $item['cpf']?></td>
@@ -148,10 +145,8 @@ $agendamento = $ag->findAll();
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
-
                 </tr>
                 <?php }?>
-
                 </tbody>
             </table>
         </div>
@@ -205,8 +200,7 @@ $agendamento = $ag->findAll();
 
         </div>
     </div>
-
-
+    
     <!-- Modal para visualizar cadastros de medicos-->
     <div class="modal fade" id="visualizarMedico" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
