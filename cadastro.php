@@ -5,7 +5,7 @@
 
     $tipo = $_GET['tp'];
 
-if ($tipo == 'M'){
+if ($tipo == 'M') {
     $med = new MedicoDao();
 
     $id = isset($_GET['id']) ? $_GET['id'] : 0; // NULL COALESCE
@@ -29,6 +29,10 @@ if ($tipo == 'M'){
     $estado = $medicos['estado'];
     $especialidade = $medicos['especialidade'];
     $crm = $medicos['crm'];
+
+    if ($id === 0) {
+        $checkF = 'checked';
+    }
 
 } else {
     $pac = new PacienteDao();

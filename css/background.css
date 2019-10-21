@@ -42,3 +42,13 @@ body {
 .dataTables_length > label > select {
     width: 60px;
 }
+
+#tbAgendamentos_filter > label {
+    display: flex;
+}
+#DataTables_Table_1_filter > label {
+    display: flex;
+}
+#DataTables_Table_0_filter > label {
+    display: flex;
+}
