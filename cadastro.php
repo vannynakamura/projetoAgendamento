@@ -30,9 +30,6 @@ if ($tipo == 'M') {
     $especialidade = $medicos['especialidade'];
     $crm = $medicos['crm'];
 
-    if ($id === 0) {
-        $checkF = 'checked';
-    }
 
 } else {
     $pac = new PacienteDao();
@@ -56,6 +53,10 @@ if ($tipo == 'M') {
     $cidade = $paciente['cidade'];
     $estado = $paciente['estado'];
 }
+
+    if ($id === 0) {
+        $checkF = 'checked';
+    }
 //var_dump($medicos);
 $arrEstadoCivis = [
     ['value' => "S", 'txt' => 'Solteiro'],
